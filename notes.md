@@ -34,7 +34,7 @@ $$
 where $R_t$ is compounded per period. Taking the natural log on both sides,
 
 $$
-\ln\left(\frac{W_T}{W_0}\right)
+\ln(\frac{W_T}{W_0})
 =
 \ln(1+R_{0,T})
 =
