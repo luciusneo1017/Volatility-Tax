@@ -11,10 +11,12 @@ Log growth rate / continuously compounded growth rate: $E[\ln(1+R)]$
 
 ## Arithmetic return vs Geometric growth
 
-Suppose your one-period simple return is $R$. The arithmetic expected return is simply
+Suppose your one-period simple return is 'R'. The arithmetic expected return is simply
+
 $$
 \mu = E[R]
 $$
+
 This tells us the expected return over a single period of measurment. However, it does not tell us the rate at which wealth compounds over time.
 
 Wealth evolves as 
