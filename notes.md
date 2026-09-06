@@ -31,7 +31,7 @@ $$
 \frac{W_T}{W_0} = \prod_{t=1}^{T}(1 + R_t)
 $$
 
-where $R_t% is compounded per period. Taking the natural log on both sides,
+where $R_t$ is compounded per period. Taking the natural log on both sides,
 
 $$
 \ln\left(\frac{W_T}{W_0}\right)
