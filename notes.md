@@ -172,6 +172,7 @@ g
 g_T \to g
 \quad \text{as } T \to \infty
 ```
+$g$ is the expected long run continuously compounded growth rate per period.
 
 Useful analogy: propotion of heads to tails for a fair coin repeatedly flipped as the number of flips gets larger and larger. At the start, $\frac{No. Heads}{No. Tails}$ might have deviated significantly from 0.5 but as the coin is flipped more and more times, the ratio will tend to 0.5.
 
@@ -181,4 +182,46 @@ Over the same period,
 
 Arithmetic expected return: $E[R]$
 
-Expected log growth: $E[\ln(1+R)]$
+Expected log growth/ Expected long-run continuously compounded growth rate: $E[\ln(1+R)]$
+
+
+## Taylor's approximation
+
+Using the Taylor's series to approximate $\ln(1+R)$ via a summation of simpler polynomials,
+
+```math
+\ln(1+R) \approx R - \frac{R^2}{2} + \frac{R^3}{3} - \frac{R^4}{4} + ...
+```
+
+Thus,
+
+```math
+g = E[\ln(1+R)] \approx E[R] - \frac{1}{2}E[R^2] + \frac{1}{3}E[R^3] - \frac{1}{4}E[R^4] + ...
+```
+
+First, suppose we only consider the approximation up to the second moment, that is,
+
+```math
+g = E[\ln(1+R)] \approx E[R] - \frac{1}{2}E[R^2]
+```
+We know that $E[R] = \mu$ and $Var[R] = \sigma^2$ and that,
+
+```math
+Var[R] = E[R^2] - E[R]^2
+```
+```math
+E[R^2] = Var[R] + E[R]^2
+=\mu^2 + \sigma^2
+```
+
+So,
+
+```math
+g \approx \mu - \frac{1}{2}(\mu^2 + \sigma^2)
+```
+
+When returns are small, $\mu^2$ can be very small which gives us the approximation
+
+```math
+g \approx \mu - \frac{1}{2}\sigma^2
+```
