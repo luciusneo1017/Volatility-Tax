@@ -7,5 +7,5 @@ The long run expected growth rate is approximated with a taylor series expansion
 calculations.ipynb contains the Monte Carlo simulations of the return distribution and its effect on the long-term compounded wealth as measured by the 25, 50 and 75th percentiles of compounded wealth as well as the mean logarithmic growth.
 
 
-[Personal Notes here:](notes.md)
+[Personal Notes here](notes.md)
 
